@@ -82,7 +82,7 @@ $f(y)$ est la fonction de densité du temps $y$ pendant lequel on est resté en 
 \begin{enumerate}
  \item 
     $$\mathrm{Gain} = 0.3 \cdot 60 \cdot Y -20 $$
-    $$E[\mathrm{Gain}] = 18 E[Y] -20=18\int_0^2 \frac{y²}{2} \mathrm{d}y-20=24$$
+    $$E[\mathrm{Gain}] = 18 E[Y] -20=18\int_0^2 \frac{y^{2}}{2} \mathrm{d}y-20=24-20=4$$
  \item Le résultat du jeu pour Pierre suit une distribution de Bernouilli: Be($p$).
 	Par le TCL, on a 
 	\[
@@ -98,7 +98,7 @@ $f(y)$ est la fonction de densité du temps $y$ pendant lequel on est resté en 
  	  \sqrt{\frac{n}{p(1-p)}}0.02=2.33\Rightarrow n=3394
 	\]
 	en prenant $p=0.5$ dans le pire cas.
- \item $$P(\mathrm{min}(Y_1,Y_2,Y_3) < 0.5) = 1 - P(\mathrm{min}(Y_1,Y_2,Y_3) > 0.5) $$ $$= 1 - P(Y>0.5)^3 = 1 - \left(\int_{0.5}^2 f(y) \, \mathrm dy \right)^3= 0.0625$$
+ \item $$P(\mathrm{min}(Y_1,Y_2,Y_3) < 0.5) = 1 - P(\mathrm{min}(Y_1,Y_2,Y_3) > 0.5) $$ $$= 1 - P(Y>0.5)^3 = 1 - \left(\int_{0.5}^2 f(y) \, \mathrm dy \right)^3= 0.176$$
  \item $$P(\bar{Y}>1.25)=P\left(Z>\frac{1.25-4/3}{\sqrt{2/9}}\sqrt{80}\right)=P(Z>-1.58)=0.9429$$
 avec $\sigma²=E[X²]-E[X]²=2/9$ et avec 1.25 qui vient de 1h15 et 4/3 qui est l'espérance.
 \end{enumerate}
